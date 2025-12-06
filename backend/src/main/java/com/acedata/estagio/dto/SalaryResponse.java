@@ -1,33 +1,34 @@
 package com.acedata.estagio.dto;
 
+import java.math.BigDecimal;
+
 public class SalaryResponse {
 
-    private double salarioBruto;
-    private double salarioFamilia;
-    private double salarioLiq;
+    private BigDecimal salarioBruto;
+    private BigDecimal salarioFamilia;
+    private BigDecimal salarioLiq;
 
-
-    public double getSalarioBruto() {
+    public BigDecimal getSalarioBruto() {
         return salarioBruto;
     }
 
-    public void setSalarioBruto(double salarioBruto) {
+    public void setSalarioBruto(BigDecimal salarioBruto) {
         this.salarioBruto = salarioBruto;
     }
 
-    public double getSalarioFamilia() {
+    public BigDecimal getSalarioFamilia() {
         return salarioFamilia;
     }
 
-    public void setSalarioFamilia(double salarioFamilia) {
+    public void setSalarioFamilia(BigDecimal salarioFamilia) {
         this.salarioFamilia = salarioFamilia;
     }
 
-    public double getSalarioLiq() {
+    public BigDecimal getSalarioLiq() {
         return salarioLiq;
     }
 
-    public void setSalarioLiq(double salarioLiq) {
+    public void setSalarioLiq(BigDecimal salarioLiq) {
         this.salarioLiq = salarioLiq;
     }
 }
