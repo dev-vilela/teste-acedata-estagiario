@@ -1,0 +1,54 @@
+.fib-container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+/* Título */
+.fib-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Input e botão */
+.input-box input {
+  padding: 8px;
+  font-size: 14px;
+  margin: 10px 0;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+
+.input-box button {
+  padding: 8px 15px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.input-box button:hover {
+  background-color: #357abd;
+}
+
+/* Caixa de resultado */
+.result-box {
+  margin-top: 25px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.result-box p {
+  margin: 6px 0;
+}

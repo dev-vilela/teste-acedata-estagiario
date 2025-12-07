@@ -22,7 +22,7 @@ export default function SequenciaForm() {
         numeros: numeros,
       };
 
-      const resp = await api.post("", req);
+      const resp = await api.post("/sequencia", req);
 
       setResultado(resp.data);
     } catch (err) {

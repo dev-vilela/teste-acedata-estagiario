@@ -1,15 +1,20 @@
-import './App.css';
-
-import FormularioSalario from './components/formsSalario/FormularioSalario';
-import SequenciaForm from './components/sequencia/SequenciaForm';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import SequenciaForm from "./components/sequencia/SequenciaForm";
+import FibonacciForm from "./components/fibonacci/FibonacciForm";
+import FormularioSalario from "./components/formsSalario/FormularioSalario";
 
 function App() {
   return (
-    <div className="App">
- 
-      <FormularioSalario />
-      {/* <SequenciaForm/> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/salario" element={<FormularioSalario />} />
+        <Route path="/sequencia" element={<SequenciaForm />} />
+        <Route path="/fibonacci" element={<FibonacciForm />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

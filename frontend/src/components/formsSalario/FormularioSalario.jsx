@@ -12,7 +12,7 @@ function FormularioSalario() {
     e.preventDefault();
 
     try {
-      const response = await api.post("", {
+      const response = await api.post("/salario", {
         valorHora: Number(valorHora),
         horasTrabalhadas: Number(horasTrabalhadas),
         filhosMenor: Number(filhosMenor),
