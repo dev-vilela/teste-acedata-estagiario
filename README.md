@@ -32,7 +32,7 @@ capaz de calcular:
 
 ### **▶ Foto do Teste 1:**
 
-![Teste 1](./img/salario.png)
+![Teste 1](img/salario.png)
 
 ---
 
@@ -51,7 +51,7 @@ capaz de calcular:
 * O maior número
 ### **▶ Foto do Teste 2:**
 
-![Teste 2](./img/sequencia.png)
+![Teste 2](img/sequencia.png)
 
 ---
 
@@ -67,7 +67,7 @@ Verifica se N faz parte da sequência (se N aparece como valor na lista).
 
 ### **▶ Foto do Teste 3:**
 
-![Teste 3](./img/image.png)
+![Teste 3](img/image.png)
 
 ---
 
@@ -77,7 +77,7 @@ A Home contém três cards com imagem, título e botão **ACESSAR**, redireciona
 
 ### **▶ Foto da Home:**
 
-![Home](./img/home.png)
+![Home](img/home.png)
 
 ---
 
