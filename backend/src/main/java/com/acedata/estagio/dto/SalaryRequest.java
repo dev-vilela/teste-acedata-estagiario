@@ -2,6 +2,7 @@ package com.acedata.estagio.dto;
 
 public class SalaryRequest {
 
+    //@Min(value = 0, message = "Valor da hora deve ser maior ou igual a zero")
     private double valorHora;
     private int horasTrabalhadas;
     private int filhosMenor;

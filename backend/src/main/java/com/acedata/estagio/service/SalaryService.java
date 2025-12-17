@@ -14,6 +14,16 @@ public class SalaryService {
 
         SalaryResponse resp = new SalaryResponse();
         BigDecimal salarioBruto = BigDecimal.valueOf(req.getValorHora()).multiply( BigDecimal.valueOf(req.getHorasTrabalhadas())) ;
+
+        if(req.getValorHora() < 0){
+            throw new IllegalArgumentException("Valor hora não pode ser negativo");
+        }
+        if (req.getHorasTrabalhadas() < 0){
+            throw  new IllegalArgumentException("Valor hora trabalhadas não pode ser negativo");
+        }
+        if (req.getFilhosMenor() < 0){
+            throw  new IllegalArgumentException("A quantidade de filhos não pode ser negativo");
+        }
         // double salarioBruto = req.getValorHora() * req.getHorasTrabalhadas();
 
         BigDecimal salarioFamilia;
@@ -26,9 +36,9 @@ public class SalaryService {
             salarioFamilia = BigDecimal.valueOf(req.getFilhosMenor()).multiply(BigDecimal.valueOf(11.90));
         }
 
-        BigDecimal salarioLiq = salarioBruto.add(salarioFamilia);
+        BigDecimal salarioLiq = salarioBruto.add(salarioFamilia); // +
 
-        resp.setSalarioBruto(salarioBruto.setScale(2, BigDecimal.ROUND_HALF_EVEN));
+        resp.setSalarioBruto(salarioBruto.setScale(2, BigDecimal.ROUND_HALF_EVEN)); //2.35
         resp.setSalarioFamilia(salarioFamilia.setScale(2, BigDecimal.ROUND_HALF_EVEN));
         resp.setSalarioLiq(salarioLiq.setScale(2, BigDecimal.ROUND_HALF_EVEN));
 

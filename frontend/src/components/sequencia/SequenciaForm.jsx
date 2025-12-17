@@ -69,7 +69,6 @@ export default function SequenciaForm() {
             <button  onClick={handleAdicionarNumero}>Adicionar</button>
           )}
 
-   
           {bloqueado && (
             <div >
               <button className="btn" onClick={handleEnviar}>Enviar Sequência</button>
@@ -89,6 +88,7 @@ export default function SequenciaForm() {
           <p><strong>Números:</strong> {resultado.numUsuario.join(", ")}</p>
           <p><strong>Menor:</strong> {resultado.menor}</p>
           <p><strong>Maior:</strong> {resultado.maior}</p>
+          <p><strong>Segundo Maior:</strong> {resultado.segMaior}</p>
         </div>
       )} </div>
     </div>

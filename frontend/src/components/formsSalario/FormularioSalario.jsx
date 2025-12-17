@@ -35,6 +35,7 @@ function FormularioSalario() {
         <label>Valor da Hora (R$):</label>
         <input
           type="number"
+          min="0"
           value={valorHora}
           onChange={(e) => setValorHora(e.target.value)}
           required
@@ -43,6 +44,7 @@ function FormularioSalario() {
         <label>Horas Trabalhadas no Mês:</label>
         <input
           type="number"
+          min="0"
           value={horasTrabalhadas}
           onChange={(e) => setHorasTrabalhadas(e.target.value)}
           required
@@ -51,6 +53,7 @@ function FormularioSalario() {
         <label>Filhos menores de 14 anos:</label>
         <input
           type="number"
+          min="0"
           value={filhosMenor}
           onChange={(e) => setFilhosMenor(e.target.value)}
           required

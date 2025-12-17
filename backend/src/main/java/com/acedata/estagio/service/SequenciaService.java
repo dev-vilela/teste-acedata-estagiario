@@ -20,13 +20,17 @@ public class SequenciaService {
 
         Integer menor = lista.stream().min(Integer::compare).orElse(null);
         Integer maior = lista.stream().max(Integer::compare).orElse(null);
+        Integer segMaior = lista.stream().distinct().sorted((a, b) -> b - a ).skip(1).findFirst().orElse(null);
 
 //        int menor = lista.get(0);
-//        for(int m : list){
-//            if(n < menor) menor = n;
+//        int maior = lista.get(0);
+//        for(int n : list){
+//            if(n < menor){
+//            menor = n;
+//            }
 //        }
 
-        return new SequenciaResponse(lista,menor, maior);
+        return new SequenciaResponse(lista,menor, maior, segMaior);
     }
 
 }

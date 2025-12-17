@@ -20,6 +20,7 @@ public class SalaryController {
 
     @PostMapping
     public SalaryResponse calcular(@RequestBody SalaryRequest req){
+
         return service.calcular(req);
     }
 
